@@ -1,10 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<style>
+		.box { 
+			height: 200px;
+			position: relative;
+			border: 1px solid grey; 
+		}
+
+		.item {
+			margin: auto;
+			position: relative;
+			text-align: center;
+		}
+
+		ul {
+			list-style-type: none;
+			margin: 10;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		li {
+			float: left;
+		}
+
+		li a {
+			display: block;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		image {
+			width:100px;
+			height:100px;
+		}
+
+	</style>
 	<title>Example nano-pro links</title>
 </head>
 <body>
-	<a href="nanopro:HTTP:MMCIF:1YUI:https://files.rcsb.org/download/1YUI.cif">1crn</a>
-	<a href="nanopro:HTTP:SDF:DB12070:https://www.drugbank.ca/structures/small_molecule_drugs/DB12070.sdf">DB120170</a>
+	<h3>This is an example of NanoPro enabled website</h3>
+	<div class="box">
+		<div> 
+			<ul>
+				<li>
+					<img src="1crn.jpg">
+					<p>
+						<a href="nanopro:HTTP:MMCIF:1YUI:https://files.rcsb.org/download/1YUI.cif">1crn</a>	
+					</p>
+				</li>
+				<li>
+					<img src="Letermovir.png">
+					<p>
+						<a href="nanopro:HTTP:SDF:DB12070:https://www.drugbank.ca/structures/small_molecule_drugs/DB12070.sdf">Letermovir</a>		
+					</p>
+				</li>
+				<li>
+					<img src="1yui.jpg">
+					<p>
+						<a href="nanopro:HTTP:PDB:DB12070:https://files.rcsb.org/download/1YUI.pdb">1yui</a>		
+					</p>
+				</li>
+			</ul>
+		</div>
+	</div>
+	
 </body>
 </html>
